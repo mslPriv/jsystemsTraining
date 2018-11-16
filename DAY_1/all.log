@@ -1,0 +1,7 @@
+2018-11-16 14:00:59.032 [main] ERROR msl.Collections.Propertiesy.PropertyLoader - null
+java.lang.NullPointerException: null
+	at java.util.Properties$LineReader.readLine(Properties.java:434) ~[?:1.8.0_191]
+	at java.util.Properties.load0(Properties.java:353) ~[?:1.8.0_191]
+	at java.util.Properties.load(Properties.java:341) ~[?:1.8.0_191]
+	at msl.Collections.Propertiesy.PropertyLoader.loadProperties(PropertyLoader.java:24) ~[bin/:?]
+	at msl.Collections.Propertiesy.PropertyLoader.main(PropertyLoader.java:41) [bin/:?]

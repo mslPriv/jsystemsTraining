@@ -16,7 +16,7 @@ public class Product {
 		this.vat = vat;
 		this.price = price;
 	}
-	protected Product(String name, double price) {
+	public Product(String name, double price) {
 		super();
 		this.name = name;
 		

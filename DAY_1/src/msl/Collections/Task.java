@@ -1,5 +1,16 @@
 package msl.Collections;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
+/**
+ * To jest klasa ktora testuje logowanie
+ * @author student
+ * @since 2018-11-15
+ * @version 1.1
+ * @see Task#Task(String, int)
+ * 
+ */
 public class Task {
 	String name;
 
@@ -20,13 +31,14 @@ public class Task {
 	}
 
 	int priority;
-
+	
+	private static final Logger LOG = LogManager.getLogger(Task.class);
 	@Override
 	public String toString() {
 		return "Task [name=" + name + ", priority=" + priority + "]";
 	}
 
-	public Task(String name, int priority) {
+	public Task(String name, int priorty) {
 		super();
 		this.name = name;
 		this.priority = priority;
